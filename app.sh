@@ -72,7 +72,7 @@ findGame
 }
 
 function findGame(){
-	echo "Trying to find a available game..."
+	echo "Trying to find an available game..."
 result="$(curl ${APIURL}?a=omok_tick&tick=1)"
 echo "${result}"
 vStr=$(echo "${result}" | cut -d'/' -f1)
